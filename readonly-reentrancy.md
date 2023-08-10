@@ -22,6 +22,7 @@ contract Vulnerable {
     }
 }
 
+```
 
 In this code, Ether transfers before updating the balance, allowing a malicious contract to withdraw Ether, ignoring the balance check repeatedly.
 
@@ -89,18 +90,19 @@ Here are some strategies to help prevent read-only reentrancy attacks:
 
 - Using Reputable Libraries and Patterns: Leveraging well-established libraries and coding patterns that have been audited and tested can help reduce the risk. Trusted libraries often include safeguards against known vulnerabilities, including read-only reentrancy.
 
-- Implementing Access Controls: Restricting the ability to call certain functions to known, trusted addresses can mitigate the risk of an unknown attacker exploiting a vulnerability. By limiting who can interact with the sensitive parts of a contract, the surface area for potential attacks can be reduced.
+- Implementing Access Controls: Restricting the ability to call certain functions to known, trusted addresses can mitigate the risk of an unknown attacker exploiting a vulnerability. Limiting who can interact with the sensitive parts of a contract can reduce the surface area for potential attacks.
 
 - Conducting Thorough Code Reviews: Peer reviews and expert assessments can uncover subtle vulnerabilities that might escape automated analysis. Having multiple sets of eyes review the code can provide a deeper understanding of potential risks.
 
-- Using Static Analysis Tools: Various tools are available that can analyze the code for known vulnerabilities, including read-only reentrancy. Using these tools as part of the development process can help identify potential issues early on.
+- Using Static Analysis Tools: Various tools can analyze the code for known vulnerabilities, including read-only reentrancy. Using these tools as part of the development process can help identify potential issues early on.
 
-- Testing with Adversarial Thinking: Simulating potential attacks and thinking like an attacker during the testing phase can uncover hidden vulnerabilities. Crafting tests that specifically target read-only reentrancy scenarios can help ensure that the code behaves as expected, even in adversarial conditions.
+- Testing with Adversarial Thinking: Simulating potential attacks and thinking like an attacker during testing can uncover hidden vulnerabilities. Crafting tests targeting read-only reentrancy scenarios can help ensure that the code behaves as expected, even in adversarial conditions.
 
 - Formal Verification: While more complex and time-consuming, formal verification can provide mathematical assurance that the contract behaves as intended under all possible conditions. It might be a suitable approach for particularly critical or high-value contracts.
 
 
 ## Conclusion
-Understanding and mitigating vulnerabilities such as read-only reentrancy is crucial in the ever-evolving landscape of blockchain and smart contract security. Both classic and read-only reentrancy attacks pose significant risks, and developers must employ diligent practices to safeguard their contracts. For those seeking expert guidance in this intricate field, this is Dr. Mohammadreza Ashouri, a Ph.D. in cybersecurity with several years of experience in blockchain security audits, who offers in-depth insights and support. If you need assistance securing your smart contracts or navigating the multifaceted world of blockchain security, you can reach out to me at ashourics@gmail.com.
+Understanding and mitigating vulnerabilities such as read-only reentrancy is crucial in the ever-evolving landscape of blockchain and smart contract security.
+Both classic and read-only reentrancy attacks pose significant risks, and developers must employ diligent practices to safeguard their contracts. For those seeking expert guidance in this intricate field, this is Dr. Mohammadreza Ashouri, a Ph.D. in cybersecurity with several years of experience in blockchain security audits, who offers in-depth insights and support. If you need assistance securing your smart contracts or navigating the multifaceted world of blockchain security, you can contact me at ashourics@gmail.com.
 
 
